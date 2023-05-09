@@ -11,7 +11,7 @@
     <groupId>com.portfolio</groupId>
     <artifactId>Gez</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Gez.Portafolio</name>
+    <name>Gez.final</name>
     <description>Portfolio de Gez</description>
     <properties>
         <java.version>1.8</java.version>
