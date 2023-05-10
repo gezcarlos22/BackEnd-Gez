@@ -1,5 +1,6 @@
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Repository\iUsuarioRepository.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Service\UsuarioService.java
+C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Service\ProyectoService.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Controller\PersonaController.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Controller\CEducacion.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Controller\AuthController.java
@@ -12,6 +13,7 @@ C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\MainSecurity.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Controller\CHys.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Enums\RolNombre.java
+C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Entity\Proyecto.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\GezApplication.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Dto\LoginUsuario.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Entity\Persona.java
@@ -25,11 +27,13 @@ C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Repository\IPersonaRepository.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Dto\dtoHys.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Entity\UsuarioPrincipal.java
+C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Controller\ProyectoController.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Dto\dtoExperiencia.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Repository\RExperiencia.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\WebConfig.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Repository\REducacion.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Entity\Usuario.java
+C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Repository\ProyectoRepository.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Repository\iRolRepository.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Security\Service\UserDetailsImpl.java
 C:\Users\Chino\Desktop\Final Portafolio\BackEnd-Gez\src\main\java\com\portafolio\Gez\Entity\hys.java

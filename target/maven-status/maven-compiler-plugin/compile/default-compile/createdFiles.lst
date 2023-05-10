@@ -2,8 +2,10 @@ com\portafolio\Gez\Controller\CHys.class
 com\portafolio\Gez\Entity\hys.class
 com\portafolio\Gez\Entity\Experiencia.class
 com\portafolio\Gez\Security\Entity\Usuario.class
+com\portafolio\Gez\Repository\ProyectoRepository.class
 com\portafolio\Gez\Dto\dtoEducacion.class
 com\portafolio\Gez\Controller\CExperiencia.class
+com\portafolio\Gez\Entity\Proyecto.class
 com\portafolio\Gez\Security\Service\UsuarioService.class
 com\portafolio\Gez\Security\Service\UserDetailsImpl.class
 com\portafolio\Gez\Repository\RExperiencia.class
@@ -16,6 +18,7 @@ com\portafolio\Gez\Security\Service\RolService.class
 com\portafolio\Gez\Entity\Persona.class
 com\portafolio\Gez\GezApplication.class
 com\portafolio\Gez\Repository\REducacion.class
+com\portafolio\Gez\Controller\ProyectoController.class
 com\portafolio\Gez\Security\Dto\LoginUsuario.class
 com\portafolio\Gez\Controller\CEducacion.class
 com\portafolio\Gez\Security\Repository\iRolRepository.class
@@ -38,3 +41,4 @@ com\portafolio\Gez\Security\Dto\JwtDto.class
 com\portafolio\Gez\Security\Entity\UsuarioPrincipal.class
 com\portafolio\Gez\Repository\IPersonaRepository.class
 com\portafolio\Gez\Service\Shys.class
+com\portafolio\Gez\Service\ProyectoService.class
