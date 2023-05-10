@@ -17,6 +17,7 @@ com\portafolio\Gez\WebConfig.class
 com\portafolio\Gez\Security\Service\RolService.class
 com\portafolio\Gez\Entity\Persona.class
 com\portafolio\Gez\GezApplication.class
+.netbeans_automatic_build
 com\portafolio\Gez\Repository\REducacion.class
 com\portafolio\Gez\Controller\ProyectoController.class
 com\portafolio\Gez\Security\Dto\LoginUsuario.class
