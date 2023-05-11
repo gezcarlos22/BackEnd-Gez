@@ -26,7 +26,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"https://mgbfrontend.web.app","http://localhost:4200"})
+@CrossOrigin(origins = {"https://frontendgez.web.app","http://localhost:4200"})
 public class CEducacion {
     @Autowired
     SEducacion sEducacion;
@@ -65,7 +65,7 @@ public class CEducacion {
         }
         
         Educacion educacion = new Educacion(
-                dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE()
+                dtoeducacion.getNombreE(), dtoeducacion.getDescripcionE(),dtoeducacion.getInicio(),dtoeducacion.getFin(),dtoeducacion.getImagen()
             );
         sEducacion.save(educacion);
         return new ResponseEntity(new Mensaje("Educacion creada"), HttpStatus.OK);
@@ -88,6 +88,9 @@ public class CEducacion {
         
         educacion.setNombreE(dtoeducacion.getNombreE());
         educacion.setDescripcionE(dtoeducacion.getDescripcionE());
+        educacion.setInicio(dtoeducacion.getInicio());
+        educacion.setFin(dtoeducacion.getFin());
+        educacion.setImagen(dtoeducacion.getImagen());
         
         sEducacion.save(educacion);
         

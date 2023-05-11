@@ -15,15 +15,18 @@ public class dtoPersona {
     @NotBlank
     private String descripcion;
     @NotBlank
+    private String profesion;
+    @NotBlank
     private String img;
 
     public dtoPersona() {
     }
 
-    public dtoPersona(String nombre, String apellido, String descripcion, String img) {
+    public dtoPersona(String nombre, String apellido, String descripcion,String profesion, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
+        this.profesion = profesion;
         this.img = img;
     }
 
@@ -58,6 +61,15 @@ public class dtoPersona {
     public void setImg(String img) {
         this.img = img;
     }
+
+    public String getProfesion() {
+        return profesion;
+    }
+
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
+    }
+    
     
     
 }

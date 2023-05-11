@@ -29,15 +29,19 @@ public class Persona {
     @NotNull
     private String descripcion;
     
+    
+    private String profesion;
+    
     private String img;
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellido, String descripcion, String img) {
+    public Persona(String nombre, String apellido, String descripcion,String profesion, String img) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.descripcion = descripcion;
+        this.profesion = profesion;
         this.img = img;
     }
 
@@ -79,6 +83,14 @@ public class Persona {
 
     public void setImg(String img) {
         this.img = img;
+    }
+
+    public String getProfesion() {
+        return profesion;
+    }
+
+    public void setProfesion(String profesion) {
+        this.profesion = profesion;
     }
    
 }

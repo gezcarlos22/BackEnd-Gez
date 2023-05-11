@@ -5,6 +5,7 @@
  */
 package com.portafolio.Gez.Dto;
 
+import java.util.Date;
 import javax.validation.constraints.NotBlank;
 
 public class dtoEducacion {
@@ -12,13 +13,22 @@ public class dtoEducacion {
     private String nombreE;
     @NotBlank
     private String descripcionE;
+    @NotBlank
+    private Date inicio;
+    @NotBlank
+    private Date fin;
+    @NotBlank
+    private String imagen;
 
     public dtoEducacion() {
     }
 
-    public dtoEducacion(String nombreE, String descripcionE) {
+    public dtoEducacion(String nombreE, String descripcionE,Date inicio, Date fin,String imagen) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.inicio = inicio;
+        this.fin = fin;
+        this.imagen = imagen;
     }
 
     public String getNombreE() {
@@ -35,6 +45,30 @@ public class dtoEducacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public Date getInicio() {
+        return inicio;
+    }
+
+    public void setInicio(Date inicio) {
+        this.inicio = inicio;
+    }
+
+    public Date getFin() {
+        return fin;
+    }
+
+    public void setFin(Date fin) {
+        this.fin = fin;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
     

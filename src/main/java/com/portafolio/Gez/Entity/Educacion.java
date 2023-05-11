@@ -5,10 +5,12 @@
  */
 package com.portafolio.Gez.Entity;
 
+import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
 
 
 @Entity
@@ -18,13 +20,28 @@ public class Educacion {
     private int id;
     private String nombreE;
     private String descripcionE;
+    
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date inicio;
+    
+    @Temporal(javax.persistence.TemporalType.DATE)
+    private Date fin; 
+    
+    private String imagen;
 
     public Educacion() {
     }
 
-    public Educacion(String nombreE, String descripcionE) {
+    public Educacion(String nombreE, String descripcionE,Date inicio, Date fin,String imagen) {
         this.nombreE = nombreE;
         this.descripcionE = descripcionE;
+        this.inicio = inicio;
+        this.fin = fin;
+        this.imagen = imagen;
+    }
+
+    public Educacion(String nombreE, String descripcionE) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     public int getId() {
@@ -49,6 +66,30 @@ public class Educacion {
 
     public void setDescripcionE(String descripcionE) {
         this.descripcionE = descripcionE;
+    }
+
+    public Date getInicio() {
+        return inicio;
+    }
+
+    public void setInicio(Date inicio) {
+        this.inicio = inicio;
+    }
+
+    public Date getFin() {
+        return fin;
+    }
+
+    public void setFin(Date fin) {
+        this.fin = fin;
+    }
+
+    public String getImagen() {
+        return imagen;
+    }
+
+    public void setImagen(String imagen) {
+        this.imagen = imagen;
     }
     
     

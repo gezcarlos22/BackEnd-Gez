@@ -5,19 +5,14 @@
  */
 package com.portafolio.Gez.Entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.JoinColumn;
 import javax.persistence.Lob;
-import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.validation.constraints.NotNull;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 
 @Entity
 public class Proyecto {
@@ -42,27 +37,16 @@ public class Proyecto {
     
     private String url;
     
-    //relacion
-    @ManyToOne
-    //creacion de columna con llave foranea
-    @JoinColumn(name = "personaid", insertable=false, updatable=false)
-    //para que se borre si se borra la persona
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private Persona persona;
-    
-    private Long personaid;
-
     public Proyecto() {
     }
 
-    public Proyecto(String proyecto, Date inicio, Date fin, String descripcion, String imagen, String url, Persona persona) {
+    public Proyecto(String proyecto, Date inicio, Date fin, String descripcion, String imagen, String url) {
         this.proyecto = proyecto;
         this.inicio = inicio;
         this.fin = fin;
         this.descripcion = descripcion;
         this.imagen = imagen;
         this.url = url;
-        this.persona = persona;
     }
 
     public int getId() {
@@ -120,23 +104,5 @@ public class Proyecto {
     public void setUrl(String url) {
         this.url = url;
     }
-    //Opción para que no haga un bug
-    @JsonBackReference
-    public Persona getPersona() {
-        return persona;
-    }
-
-    public void setPersona(Persona persona) {
-        this.persona = persona;
-    }
-
-    public Long getPersonaid() {
-        return personaid;
-    }
-
-    public void setPersonaid(Long personaid) {
-        this.personaid = personaid;
-    }
-    
-    
+ 
 }

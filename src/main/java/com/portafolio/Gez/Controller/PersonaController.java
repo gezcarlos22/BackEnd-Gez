@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"https://frontendgez.web.app","http://localhost:4200"})
 public class PersonaController {
     @Autowired
     ImpPersonaService personaService;
@@ -84,6 +84,7 @@ public class PersonaController {
         persona.setNombre(dtopersona.getNombre());
         persona.setApellido(dtopersona.getApellido());
         persona.setDescripcion(dtopersona.getDescripcion());
+        persona.setProfesion(dtopersona.getProfesion());
         persona.setImg(dtopersona.getImg());
         
         personaService.save(persona);
