@@ -66,13 +66,11 @@ public class CExperiencia {
         Experiencia experiencia = new Experiencia(dtoexp.getNombreE(), dtoexp.getDescripcionE(),dtoexp.getInicio(),dtoexp.getFin(),dtoexp.getImagen()
         );
         sExperiencia.save(experiencia);
-        
         return new ResponseEntity(new Mensaje("Experiencia agregada"), HttpStatus.OK);
     }
     
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoExperiencia dtoexp){
-        //Validamos si existe el ID
         if(!sExperiencia.existsById(id))
             return new ResponseEntity(new Mensaje("El ID no existe"), HttpStatus.BAD_REQUEST);
         //Compara nombre de experiencias
@@ -85,9 +83,9 @@ public class CExperiencia {
         Experiencia experiencia = sExperiencia.getOne(id).get();
         experiencia.setNombreE(dtoexp.getNombreE());
         experiencia.setDescripcionE((dtoexp.getDescripcionE()));
-        experiencia.setInicio(experiencia.getInicio());
-        experiencia.setFin(experiencia.getFin());
-        experiencia.setImagen(experiencia.getImagen());
+        experiencia.setInicio(dtoexp.getInicio());
+        experiencia.setFin(dtoexp.getFin());
+        experiencia.setImagen(dtoexp.getImagen());
         
         sExperiencia.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
