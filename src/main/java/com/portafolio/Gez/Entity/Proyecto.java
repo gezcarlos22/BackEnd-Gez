@@ -13,6 +13,7 @@ import javax.persistence.Id;
 import javax.persistence.Lob;
 import javax.persistence.Temporal;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Proyecto {
@@ -30,6 +31,7 @@ public class Proyecto {
     
     @Lob //para indicar que es un texto largo
     @NotNull
+    @Size(min = 20, max = 5000, message = "no cumple con la longitud")
     private String descripcion;
     
     

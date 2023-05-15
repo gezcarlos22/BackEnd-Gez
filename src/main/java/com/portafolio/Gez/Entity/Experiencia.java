@@ -10,7 +10,9 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.persistence.Temporal;
+import javax.validation.constraints.Size;
 
 @Entity
 public class Experiencia {
@@ -18,6 +20,9 @@ public class Experiencia {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String nombreE;
+    
+    @Lob //para indicar que es un texto largo
+    @Size(min = 20, max = 5000, message = "no cumple con la longitud")
     private String descripcionE;
     
     @Temporal(javax.persistence.TemporalType.DATE)

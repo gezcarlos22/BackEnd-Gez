@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import lombok.Getter;
@@ -26,7 +27,9 @@ public class Persona {
     @Size(min = 1, max = 50, message = "no cumple con la longitud")
     private String apellido;
     
+    @Lob //para indicar que es un texto largo
     @NotNull
+    @Size(min = 20, max = 5000, message = "no cumple con la longitud")
     private String descripcion;
     
     
